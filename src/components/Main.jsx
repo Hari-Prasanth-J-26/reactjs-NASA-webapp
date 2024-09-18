@@ -1,10 +1,8 @@
-import React from 'react'
-
 export default function Main(props) {
-    const {data} = props
-  return (
-    <div className='imgContainer'>
-        <img src={data ? data.hdurl : "galaxy.jpg"} alt={data.title || "M31 : The Andromeda galaxy"} className="bgImage"/>
-    </div>
-  )
+    const { data } = props
+    return (
+        <div className="imgContainer">
+            <img src={data.hdurl} alt={data.title || 'bg-img'} className="bgImage" />
+        </div>
+    )
 }
